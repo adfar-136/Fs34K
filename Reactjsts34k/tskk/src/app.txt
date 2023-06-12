@@ -1,0 +1,54 @@
+import About from './component/About'
+
+function App() {
+  return (
+    <>
+    <div>
+    
+
+      <h1>Adfar rashid</h1>
+      {header}
+      {main}
+     
+    </div>
+    <div>
+
+    </div>
+    </>
+  );
+}
+const myStyle = {color:"red",backgroundColor:"green"};
+const header = (
+  <header style={myStyle}>
+  <h1>Adfarrrrrrrr</h1>
+  </header>
+)
+const main = (
+  <main style={myStyle}>
+    <h1>React has started</h1>
+    <p>@5 days to go</p>
+    <small>Adfar rashid</small>
+  </main>
+)
+
+export default App;
+import React from 'react'
+var arr = [
+    ["HTMl",10],
+    ["CSS",9],
+    ["JS",8],
+    ["React",7]
+]
+export default function Array() {
+  return (
+    <div>
+        {arr.map((item,index)=>{
+            return (
+                <li key={index}>{item.map((x,i)=>{
+                    return (<li>{x}</li>)
+                })}</li>
+            )
+        })}
+    </div>
+  )
+}
