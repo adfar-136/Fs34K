@@ -1,13 +1,20 @@
-import React from 'react'
+import React, { useState } from 'react'
+import "./App.css"
 
-import Array from './component/Array';
-import ArrayofObjects from './component/ArrayofObjects';
+// import ArrayofObjects from './component/ArrayofObjects';
+// import Classbased from './component/Classbased';
+// import Counter from './component/Counter';
+import COunterfunction from './component/COunterfunction';
 
 
 export default function App() {
+  const [color,setColor] = useState("light") 
   return (
-    <div>
-      <ArrayofObjects/>
+    <div className={color}>
+      <button onClick={()=>{setColor("dark")}}>Change color</button>
+      {/* <ArrayofObjects/> */}
+     <COunterfunction/>
+      {/* <Classbased name="Adfar" arr={[1,2,3,4,5]}/> */}
       
     
       
