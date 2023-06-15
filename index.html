@@ -6,27 +6,6 @@
     <title>Document</title>
 </head>
 <body>
-    <script>
-        class employee{
-            constructor(name){
-                this.empname= name;
-                console.log("constructor 1");
-            }
-            info(){
-                console.log("Adfar base class" + this.empname);
-            }
-        }
-        class manager extends employee{
-           /*--constructor(){
-                console.log("constructor 2");
-            }--*/
-            info(){
-                super.info()
-                console.log("manger name" + this.empname);
-            }
-        }
-        let a = new manager("adfar")
-        a.info()
-    </script>
+    <h1>Adfar</h1>
 </body>
 </html>
