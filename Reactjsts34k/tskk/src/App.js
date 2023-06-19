@@ -1,14 +1,15 @@
 import React from 'react'
-import Formclass from './component/Formclass'
-import Formfucntionuncontrolled from './component/Formfucntionuncontrolled'
-import Classcontrolled from './component/Classcontrolled'
+// import Project1 from './component/Project1/Project1'?
+import LifecycleMethods from './component/LifecycleMethods'
+import StaticGDSFP from './component/StaticGDSFP'
+import Updatelifecycle from './component/Updatelifecycle'
 
 export default function App() {
   return (
     <div>
-      {/* <Formclass/> */}
-      {/* <Formfucntionuncontrolled/> */}
-      <Classcontrolled/>
+      {/* <LifecycleMethods/> */}
+      {/* <StaticGDSFP ffName="Hello ADfar"/> */}
+      <Updatelifecycle/>
     </div>
   )
 }

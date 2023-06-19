@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    .container{
+        display: grid;
+        grid-template-areas: "header1 header2 header3 header4"
+        "header5 header6 header6 header7" 
+        "header5 header8 header9 header7";
+        border: solid 2px red;
+        height: 700px;
+        width: 1400px;  
+    }
+ 
+    .container:nth-child(odd){
+        background-color: rgb(94, 218, 189);
+    }
+    .item{
+        border: solid 2px;
+        font-size: 25px;
+        text-align: center;
+        padding: 40px;
+    }
+    .item1{
+        grid-area: header1;
+    }
+    .item2{
+        grid-area: header2;
+    }
+    .item3{
+        grid-area: header3;
+    }
+    .item4{
+        grid-area: header4;
+    }
+    .item5{
+        grid-area: header5;
+    }
+    .item6{
+        grid-area: header6;
+    }
+    .item7{
+        grid-area: header7;
+    }
+    .item8{
+        grid-area: header8;
+    }
+    .item9{
+        grid-area: header9;
+    }
+</style>
+<body>
+    <div class="container">
+        <div class="item item1">Header1</div>
+        <div class="item item2">Header2</div>
+        <div class="item item3">Header3</div> 
+        <div class="item item4">Header4</div> 
+        <div class="item item5">Header5</div> 
+        <div class="item item6">Header6</div> 
+        <div class="item item7">Header7</div> 
+        <div class="item item8">Header8</div> 
+        <div class="item item9">Header9</div> 
+    </div>
+</body>
+</html>

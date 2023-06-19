@@ -1,0 +1,32 @@
+.container{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.minicontainer{
+    display: flex;
+    flex-direction: column;
+    border: 2px solid;
+    align-items: center;
+    width: 70%;
+    margin: auto;
+    padding: 20px;
+    margin-bottom: 30px;
+}
+.topsection{
+    display: flex;
+    align-items: center;
+   
+    width: 550px;
+    justify-content: space-between;
+}
+.textcontainer{
+    margin: auto;
+    width: 50%;
+   
+}
+
+.btncontainer{
+    display: flex;
+    justify-content: space-between;
+}

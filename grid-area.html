@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .container{
+            display: grid;
+            border: 2px solid red;
+            grid-template-areas: "...... header header"
+            "sidebar content art1"
+            "sidebar content art2"
+            "sidebar nav nav"
+            "footer footer footer";
+            padding: 10px;
+            column-gap: 10px;
+        }
+        .item{
+            border: 2px solid;
+            padding: 20px;
+            font-size: 25px;
+            text-align: center;
+            margin:5px;
+            background-color: aqua;
+        }
+        .item1{
+            grid-area: header;
+        }
+        .item2{
+            grid-area: sidebar;
+            
+        }
+        .item3{
+            grid-area: nav;
+        }
+        .item4{
+            grid-area: content;
+        }
+        .item5{
+            grid-area: footer;
+        }
+        .item6{
+            grid-area: art1;
+        }
+        .item7{
+            grid-area: art2;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="item item1">Header</div>
+        <div class="item item2">Sidebar</div>
+        <div class="item item3">Nav</div>
+        <div class="item item4">Content</div>
+        <div class="item item5">Footer</div>
+        <div class="item item6">Article</div>
+        <div class="item item7">Article</div>
+    </div>
+</body>
+</html>
