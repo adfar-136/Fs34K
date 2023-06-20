@@ -1,15 +1,14 @@
-import React from 'react'
-// import Project1 from './component/Project1/Project1'?
-import LifecycleMethods from './component/LifecycleMethods'
-import StaticGDSFP from './component/StaticGDSFP'
-import Updatelifecycle from './component/Updatelifecycle'
+import React, { useState } from 'react'
+import "./App.css"
 
+import LifecycleMethods from './component/LifecycleMethods'
+import Useeffect from './component/Useeffect'
 export default function App() {
+  
   return (
     <div>
-      {/* <LifecycleMethods/> */}
-      {/* <StaticGDSFP ffName="Hello ADfar"/> */}
-      <Updatelifecycle/>
+      <LifecycleMethods/>
+       <Useeffect/>
     </div>
   )
 }

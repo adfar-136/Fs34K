@@ -1,6 +1,20 @@
-.dark{
-  background-color: black;
+.active{
+    background-color: white;
+    color: black;
 }
-.light{
-  background-color: white;
+.inactive{
+    background-color: black;
+    color: white;
+}
+div{
+    height: 200px;
+    width: 200px;
+}
+.white{
+   
+    background-color: #fff;
+}
+.black{
+    background-color: black;
+    color: white;
 }
