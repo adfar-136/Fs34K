@@ -1,14 +1,12 @@
 import React, { useState } from 'react'
-import "./App.css"
-
-import LifecycleMethods from './component/LifecycleMethods'
-import Useeffect from './component/Useeffect'
+import Comp1 from './component/ContextApi/Comp1'
+const fname = "Adfar"
 export default function App() {
-  
+  const [count,setCount] = useState(0)
   return (
     <div>
-      <LifecycleMethods/>
-       <Useeffect/>
+      {count}
+      <Comp1 fname={fname} state={count} setState= {setCount}/>
     </div>
   )
 }

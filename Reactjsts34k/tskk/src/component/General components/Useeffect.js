@@ -5,7 +5,7 @@ export default function Useeffect() {
     const [number,setNumber] =useState(0)
     useEffect(()=>{
         console.log("useEffect invoked")
-    },[count,number])
+    })
   return (
     <div>
         <h1>{count}</h1>
