@@ -1,5 +1,5 @@
 import React from 'react'
-
+import "./Newsitem.css"
 export default function Newsitem(props) {
   return (
     <div>
@@ -8,7 +8,7 @@ export default function Newsitem(props) {
   <div className="card-body">
     <h5 className="card-title">{props.title}</h5>
     <p className="card-text">{props.description}</p>
-    <a href={props.url} target='_blank' className="btn btn-primary">Read More</a>
+    <a href={props.url} target='_blank' rel='noreferrer' className="btn btn-primary">Read More</a>
   </div>
 </div>
     </div>
