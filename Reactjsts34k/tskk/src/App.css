@@ -1,20 +1,6 @@
 .active{
-    background-color: white;
-    color: black;
-}
-.inactive{
-    background-color: black;
-    color: white;
-}
-div{
-    height: 200px;
-    width: 200px;
-}
-.white{
-   
-    background-color: #fff;
-}
-.black{
-    background-color: black;
-    color: white;
+    color: rgb(11, 186, 166);
+    font-size: 40px;
+    border: red solid 3px;
+    text-decoration: none;
 }
