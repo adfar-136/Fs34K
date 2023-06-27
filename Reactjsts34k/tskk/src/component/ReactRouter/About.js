@@ -1,6 +1,4 @@
 import React from 'react'
-
-import Header from './Header'
 import { useNavigate } from 'react-router-dom'
 
 export default function About() {
@@ -10,7 +8,7 @@ export default function About() {
     }
   return (
     <div>
-         <Header/>
+       
         <h1>I am About Page</h1>
         <button onClick={gotocontact}>GoToContact</button>
     </div>

@@ -1,6 +1,6 @@
 import React from 'react'
-import Header from './Header'
-import { useNavigate } from 'react-router-dom'
+
+import { Outlet, useNavigate } from 'react-router-dom'
 
 export default function Contact() {
     const navigate = useNavigate()
@@ -9,9 +9,11 @@ export default function Contact() {
     }
   return (
     <div>
-        <Header/>
+        
         <h1>I am Contact Page</h1>
+        <p>sdfdsfsfsdf</p>
         <button onClick={gotoAbout}>goToAbout</button>
+        <Outlet/>
     </div>
   )
 }
