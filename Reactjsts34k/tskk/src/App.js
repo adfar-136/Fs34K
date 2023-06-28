@@ -1,10 +1,20 @@
 import React from 'react'
-import LocalStorage2 from './component/LocalStorage/LocalStorage2'
+import Counter from './component/ErrorBoundary/Counter'
+import Errorboundary from './component/ErrorBoundary/Errorboundary'
+import TodoTask from "./component/CustomHooks/TodoTask"
 
 export default function App() {
   return (
     <div>
-      <LocalStorage2/>
+      <h1>Hello welcome</h1>
+      <Errorboundary>
+        <Counter/>
+      </Errorboundary>
+      <Errorboundary>
+        <Counter/>
+      </Errorboundary>
+      
+      <TodoTask/>
     </div>
   )
 }

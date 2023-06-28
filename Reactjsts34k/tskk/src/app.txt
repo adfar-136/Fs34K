@@ -146,3 +146,28 @@ export default function App() {
     </BrowserRouter>
   );
 }
+
+
+
+
+import React, { Suspense, lazy } from 'react'
+
+const Header = lazy(()=>import("./component/LazyLoading/Header"))
+const About = lazy(()=>import("./component/LazyLoading/About"))
+
+export default function App() {
+  return (
+    <div>
+      <h1>Hello Welcome</h1>
+      <Suspense fallback={<h1>Please wait....</h1>}>
+        <Header />
+       
+      </Suspense>
+      <Suspense fallback={<h1>Sabar Rakho......</h1>}>
+      
+        <About/>
+      </Suspense>
+     
+    </div>
+  )
+}
