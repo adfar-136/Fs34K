@@ -1,20 +1,10 @@
 import React from 'react'
-import Counter from './component/ErrorBoundary/Counter'
-import Errorboundary from './component/ErrorBoundary/Errorboundary'
-import TodoTask from "./component/CustomHooks/TodoTask"
+import Todos from './component/Todo Main Project/Todos'
 
 export default function App() {
   return (
     <div>
-      <h1>Hello welcome</h1>
-      <Errorboundary>
-        <Counter/>
-      </Errorboundary>
-      <Errorboundary>
-        <Counter/>
-      </Errorboundary>
-      
-      <TodoTask/>
+      <Todos/>
     </div>
   )
 }

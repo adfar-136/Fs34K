@@ -1,0 +1,15 @@
+.row{
+    display: grid;
+    grid-template-columns: 3fr 9fr;
+    
+}
+.item{
+    height: 80vh;
+    border: 3px solid red;
+}
+.item1{
+    background-color: blueviolet
+}
+.item2{
+    background-color: yellowgreen;
+}
