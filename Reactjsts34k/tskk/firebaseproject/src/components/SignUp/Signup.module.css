@@ -40,6 +40,9 @@
 .footer button:hover{
     background-color: rgb(24, 9, 242);
 }
+.footer button:disabled{
+    background-color: red;
+}
 .footer .account{
     display: flex;
     align-items: center;

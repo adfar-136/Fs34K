@@ -1,0 +1,57 @@
+.row{
+    display: grid;
+    grid-template-columns: 3fr 9fr;
+    
+}
+.item{
+    height: 80vh;
+    border: 3px solid red;
+}
+.item1{
+    background-color: blueviolet
+}
+.item2{
+    background-color: yellowgreen;
+}
+.top{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+.top button{
+    border: none;
+    background-color: rgb(19, 118, 231);
+    color: #fff;
+    border-radius: 7px;
+    padding: 12px 16px;
+    font-weight: bold;
+    font-size: 1rem;
+    cursor: pointer;
+}
+.top button:hover{
+    background-color: rgb(24, 9, 242);
+
+}
+.too{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    flex-direction: column;
+    background: linear-gradient(to right,#ea6c23,#aaaa23);
+
+}
+.too button{
+    border: none;
+    background-color: rgb(19, 118, 231);
+    color: #fff;
+    border-radius: 7px;
+    padding: 12px 16px;
+    font-weight: bold;
+    font-size: 1rem;
+    cursor: pointer;
+}
+.too button:hover{
+    background-color: rgb(24, 9, 242);
+
+}

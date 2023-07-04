@@ -1,13 +1,17 @@
 import React, { useState } from 'react'
 import styles from "./Signup.module.css"
 import Inputform from '../InputForm/Inputform'
-import { Link } from 'react-router-dom'
+import { Link, useNavigate } from 'react-router-dom'
+import {auth} from "../../firebase"
+import { createUserWithEmailAndPassword, updateProfile } from 'firebase/auth'
 export default function Signup() {
   const [values,setValues] = useState({
     name:"",
     email:"",
     password:""
   })
+  const [btnDisabled,setBtnDisabled] = useState(false)
+  const navigate = useNavigate()
   const [errMsg,setErrMsg] = useState("")
   const handleSubmission =()=>{
     if(!values.name || !values.email ||!values.password){
@@ -15,6 +19,18 @@ export default function Signup() {
       return
     }
     setErrMsg("")
+    setBtnDisabled(true)
+    createUserWithEmailAndPassword(auth,values.email,values.password).then((res)=>{
+      const user = res.user;
+      console.log(user)
+      updateProfile(user,{
+        displayName:values.name
+      })
+      navigate('/login')
+    }).catch((err)=>{
+      setBtnDisabled(false)
+      setErrMsg(err.message)
+    })
   }
   return (
   
@@ -34,7 +50,7 @@ export default function Signup() {
           />
           <div className={styles.footer}>
             <b className={styles.error}>{errMsg}</b>
-            <button onClick={handleSubmission}>SignUp</button>
+            <button onClick={handleSubmission} disabled={btnDisabled}>SignUp</button>
            <div className={styles.account}>
               <p>Already have an Account?</p>
               <span>
