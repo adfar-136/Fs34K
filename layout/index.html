@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .main-container{
+            display: grid;
+            grid-template-columns: 1.7fr 6fr;
+            gap:5px;
+            width: 100%;
+            height: 100%;
+        }
+        .main-item1{
+            background-color: rgb(33,33 ,33);
+            display: grid;
+            gap: 5px;
+            grid-template-columns: 0.98fr;
+            grid-template-rows: 1.6fr 6fr;
+        }
+        .left-item1{
+            background-color: rgb(50,50,50);
+            margin-top: 15px;
+            margin-left: 15px;
+            border-radius: 15px;
+        }
+        .left-item2{
+            background-color: rgb(50,50,50);
+            margin-top: 15px;
+            margin-left: 15px;
+            border-radius: 15px;
+            margin-bottom: 30px;
+            display: flex;
+            flex-direction: column;
+            row-gap: 10px;
+        }
+        .top-library{
+            height: 30px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+        .top-library h1{
+            color: white;
+            margin: 10px;
+            margin-top: 20px;
+            font-size: 20px;
+        }
+        .left-library1{
+            background-color: rgb(100,100,100);
+            height: 120px;
+            margin: 10px;
+            border-radius: 15px;
+        }
+        .left-library2{
+            background-color: rgb(100,100,100);
+            height: 160px;
+            margin: 10px;
+            border-radius: 15px;
+        }
+        .main-item2{
+            background-color: rgb(33,33 ,33);
+            height: 100vh;
+            display: grid;
+            grid-template-columns: 1fr;
+            grid-template-rows: 1fr 12fr;
+        }
+        .right-side1{
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+        .right-side1 h1{
+            color: #fff;
+            font-size: 22px;
+            margin: 20px;
+        }
+        .right-side2{
+            background-color: rgb(100,100,100);
+            margin-left: 15px;
+            margin-right: 15px;
+            border-radius: 20px;
+            display: grid;
+            grid-template-columns: 1fr;
+        }
+        .song-item1,.song-item2,.song-item3,.song-item4{
+            background-color: rgb(36,36,36);
+        }
+        .song-item{
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            color: white;
+        }
+        .song-item a{
+            color: #fff;
+            text-decoration: none;
+            cursor: pointer;
+        }
+        .song-library{
+            display: flex;
+            align-items: center;
+            gap: 20px;
+        }
+        .song-library div{
+            background-color: rgb(200,200,200);
+            height: 200px;
+            width: calc((100%/5) - 4px);
+            border-radius: 10px;
+        }
+    </style>
+</head>
+<body>
+    <div class="main-container">
+        <div class="main-item1">
+            <div class="left-item1"></div>
+            <div class="left-item2">
+                <div class="top-library">
+                    <h1>Your Library</h1>
+                    <h1>+</h1>
+                </div>
+                <div class="left-library1"></div>
+                <div class="left-library2"></div>
+            </div>
+        </div>
+        <div class="main-item2">
+            <div class="right-side1">
+                <h1><  ></h1>
+                <h1>Login/SignUp</h1>
+            </div>
+            <div class="right-side2">
+                <div class="song-item1 song-item">
+                    <h1>Focus</h1>
+                    <a href="#">Show All</a>
+                </div>
+                <div class="song-item2 song-library">
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                </div>
+                <div class="song-item3 song-item">
+                    <h1>Spotify</h1>
+                    <a href="#">Show All</a>
+                </div>
+                <div class="song-item4 song-library">
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

@@ -193,3 +193,57 @@ export default function App() {
     </div>
   )
 }
+
+
+import React from 'react'
+import { useState } from 'react'
+
+export default function App() {
+  const [input,setInput] =useState()
+  const [list,setList] = useState([])
+  const [edit, setEdit] = useState(-1)
+  const handleAdd = ()=>{
+    if(input===""){
+      alert('please fill')
+      return;
+    }
+    if(edit === -1){
+      setList([...list,input])
+    }
+    else {
+      let updatedList= [...list];
+      updatedList[edit] = input;
+      setList(updatedList);
+      setEdit(-1)
+    }
+    setInput("")
+  }
+  const handleRemove = (index)=>{
+    const newList = [...list]
+    newList.splice(index,1)
+    setList(newList)
+  }
+  const handleEdit=(index)=>{
+      const itemSelected = list[index]
+      setInput(itemSelected)
+      setEdit(index)
+
+  }
+  return (
+    <div>
+      <input type="text" 
+      value={input}
+      onChange={(e)=>setInput(e.target.value)}/>
+      <button onClick={handleAdd}>{edit === -1?"Add Task":"Update Task"}</button>
+      <ul>
+        {list.map((item,index)=>(
+          <li>
+            {item}
+            <button onClick={()=>handleRemove(index)}>Remove Item</button>
+            <button onClick={()=>handleEdit(index)}>Edit Item</button>
+          </li>
+        ))}
+      </ul>
+    </div>
+  )
+}
